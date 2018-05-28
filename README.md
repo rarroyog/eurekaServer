@@ -11,3 +11,12 @@ being the URL's
 * http://eureka-primary:8011/eureka/
 * http://eureka-secondary:8012/eureka/
 * http://eureka-tertiary:8013/eureka/
+
+Running all services:
+* java -jar /home/raularroyo/sts-bundle/workspace-sts/MicroservicesWithSpring/lab-8/config-server-solution/target/lab-8-config-server-solution-1.jar
+* java -jar /home/raularroyo/sts-bundle/workspace-sts/eureka-server/target/eureka-server-1.jar
+* java -jar -Dspring.profiles.active=subject /home/raularroyo/sts-bundle/workspace-sts/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar
+* java -jar -Dspring.profiles.active=adjective /home/raularroyo/sts-bundle/workspace-sts/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar
+* java -jar -Dspring.profiles.active=noun /home/raularroyo/sts-bundle/workspace-sts/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar
+* java -jar -Dspring.profiles.active=article /home/raularroyo/sts-bundle/workspace-sts/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar
+* java -jar -Dspring.profiles.active=verb /home/raularroyo/sts-bundle/workspace-sts/eureka-client/target/eureka-client-0.0.1-SNAPSHOT.jar
